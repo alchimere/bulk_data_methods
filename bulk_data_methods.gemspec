@@ -14,7 +14,8 @@ Gem::Specification.new do |s|
   s.test_files   = `git ls-files -- {test,spec,features}/*`.split("\n")
   s.require_path = 'lib'
   s.homepage     = 'http://github.com/fiksu/bulk_data_methods'
-  s.add_dependency "pg"
+  #s.add_dependency "pg"
+  s.add_dependency "activerecord-jdbcpostgresql-adapter"
   s.add_dependency "activerecord", '>= 3.0.0', '< 4.0'
   s.add_development_dependency "rails", '>= 3.0.0', '< 4.0'
   s.add_development_dependency "rspec-rails"
